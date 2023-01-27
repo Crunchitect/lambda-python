@@ -1,2 +1,2 @@
-true = λt.λf.t
-false = λf.λt.f
+TRUE = λt.λf.t
+FALSE = λf.λt.f
