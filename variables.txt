@@ -1,2 +1,0 @@
-TRUE = λt.λf.t
-FALSE = λf.λt.f

@@ -1,0 +1,10 @@
+  3           0 LOAD_CLOSURE             0 (t)
+              2 BUILD_TUPLE              1
+              4 LOAD_CONST               1 (<code object <lambda> at 0x000002F1B0D709D0, file "C:\Users\HOME_USE\PycharmProjects\lambda-python\variables.py", line 3>)
+              6 LOAD_CONST               2 ('<lambda>.<locals>.<lambda>')
+              8 MAKE_FUNCTION            8 (closure)
+             10 RETURN_VALUE
+
+Disassembly of <code object <lambda> at 0x000002F1B0D709D0, file "C:\Users\HOME_USE\PycharmProjects\lambda-python\variables.py", line 3>:
+  3           0 LOAD_DEREF               0 (t)
+              2 RETURN_VALUE
