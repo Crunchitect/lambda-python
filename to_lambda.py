@@ -1,3 +1,7 @@
+import dis
+import variables
+
+
 class Lambda:
     def __init__(self, code):
         self.code = code
@@ -22,6 +26,12 @@ class Lambda:
                 python_code += i
         return eval(python_code)
 
+    def return_type(self):
+        code = self.to_function()
+        for i1, i2 in zip(variables.all_vars,  variables.all_vars_str):
+            if dis.dis(code, file=open('dis_dump.txt', 'r+')) == dis.dis(i1, file=open('dis_dump.txt', 'r+')):
+                return i2
+
 
 if __name__ == "__main__":
     with open("examples/identity.lambda", "r") as f:
@@ -29,3 +39,4 @@ if __name__ == "__main__":
         print(lambda_code)
         output_function = Lambda(lambda_code).to_function()
         print(output_function(2))
+        print(Lambda(lambda_code).return_type())
