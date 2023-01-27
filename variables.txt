@@ -1,0 +1,2 @@
+true = λt.λf.t
+false = λf.λt.f
